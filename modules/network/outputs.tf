@@ -1,9 +1,9 @@
-variable "resource_group_name" {
-  description = "Nom du groupe de ressources"
-  type        = string
+output "vnet_name" {
+  description = "Nom du réseau virtuel"
+  value       = azurerm_virtual_network.vnet.name
 }
 
-variable "location" {
-  description = "Region Azure"
-  type        = string
+output "subnet_id" {
+  description = "ID du sous-réseau pour la VM"
+  value       = azurerm_subnet.subnet.id
 }
