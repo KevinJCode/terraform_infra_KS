@@ -1,9 +1,9 @@
-output "database_name" {
-  description = "Nom de la base de données MySQL"
-  value       = azurerm_mysql_database.db.name
+variable "resource_group_name" {
+  description = "Nom du groupe de ressources"
+  type        = string
 }
 
-output "mysql_server_fqdn" {
-  description = "Nom de domaine complet du serveur MySQL"
-  value       = azurerm_mysql_server.mysql.fully_qualified_domain_name
+variable "location" {
+  description = "Région Azure"
+  type        = string
 }
