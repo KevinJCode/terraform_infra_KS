@@ -1,9 +1,9 @@
-output "vnet_name" {
-  description = "Nom du reseau virtuel"
-  value       = azurerm_virtual_network.vnet.name
+variable "resource_group_name" {
+  description = "Nom du groupe de ressources"
+  type        = string
 }
 
-output "subnet_id" {
-  description = "ID du sous-reseau pour la VM"
-  value       = azurerm_subnet.subnet.id
+variable "location" {
+  description = "Région Azure"
+  type        = string
 }

@@ -9,7 +9,7 @@ module "storage" {
 }
 
 module "function" {
-  source               = "./modules/function"
+  source               = "./modules/fonction"
   resource_group_name  = var.resource_group_name
   location             = var.location
   storage_account_name = module.storage.storage_account_name
